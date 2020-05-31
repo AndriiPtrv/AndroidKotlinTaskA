@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CalcFragment">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/sm_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сантиментры - Метры"/>
+
+        <RadioButton
+            android:id="@+id/grn_dol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Гривны - Доллары" />
+
+        <RadioButton
+            android:id="@+id/g_kg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Граммы - килограммы" />
+
+        <RadioButton
+            android:id="@+id/c_k"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Цельсия - Кельвина" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Ввод чисел "
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Результат: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>
